@@ -50,3 +50,4 @@ public class CalcView {
     {
         this.model = b;
     }
+}
