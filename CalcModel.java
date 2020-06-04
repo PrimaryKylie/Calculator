@@ -166,5 +166,43 @@ public class CalcModel {
         operator = "";
     }
     
-    
+	/*
+	 * This method does the remainder between two values
+	 */
+	public void remainder() {
+			answer = this.getValue1() % this.getValue2();	
+	}
+	
+	/*
+	 * This method divides the values only if they are integers
+	 */
+	public void intDivision() {
+		this.divInt = true;
+		int origAnswer;
+		origAnswer = (int) (this.getValue1() / this.getValue2());
+		answer = (double)origAnswer;
+	
+	}
+	
+	/*
+	 * This method gets the factorial of a value
+	 */
+	public void factorial() {
+			
+			int mult = 1;
+			for (int i = 1; i <= (int)this.getValue1(); i++) {
+				mult = mult * i;
+			}
+			answer = (double) mult;
+	}
+	
+	/*
+	 * This determines if the integer division has been done
+	 * @return boolean
+	 */
+	public boolean getIsDivInt() {
+		return this.divInt;
+	}
+	
+	
 }
