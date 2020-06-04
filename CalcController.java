@@ -77,3 +77,4 @@ public class CalcController {
         this.model.reset();
         this.view.update(model);
     }
+}
